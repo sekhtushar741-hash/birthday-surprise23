@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Princess Suhana ❤️👑</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Editorial Luxury & Clean Apple UI Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- VIVID DYNAMIC BACKGROUND CANVAS -->
+    <canvas id="magicCanvas"></canvas>
+    <div class="gradient-overlay"></div>
+
+    <!-- AUDIO SYSTEM CONTAINER -->
+    <audio id="bgMusic" loop preload="auto">
+        <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="audio-widget-floating" id="audioWidget">
+        <div class="disc-wrapper" id="discBtn">
+            <div class="vinyl-disc">🎵</div>
+        </div>
+        <div class="controls-drawer">
+            <button id="playPauseBtn" title="Play/Pause">⏸</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.05" value="0.7" title="Volume">
+            <button id="muteBtn" title="Mute/Unmute">🔊</button>
+        </div>
+    </div>
+
+    <!-- CINEMATIC LOADING INTRO SCREEN -->
+    <section id="introLoader" class="fullscreen-panel active">
+        <div class="glass-card premium-entrance text-center">
+            <span class="watermark-dev">Made with endless love ❤️ by Tushar</span>
+            <h1 class="fairytale-title">Happy Birthday<br><span class="highlight-gold">Princess Suhana ❤️👑</span></h1>
+            <p class="cinematic-subtitle">"Every love story is beautiful, but meeting you made my life magical."</p>
+            <button class="luxury-action-btn" id="enterExperienceBtn">
+                <span>🎁 Open Your Surprise</span>
+                <div class="btn-glow"></div>
+            </button>
+        </div>
+    </section>
+
+    <!-- MAIN INTERACTIVE NARRATIVE WRAPPER -->
+    <main id="mainExperience" class="hidden-narrative">
+
+        <!-- SECTION 1: PHOTO GALLERY SYSTEM -->
+        <section class="story-block page-padding">
+            <h2 class="section-title">Captured Moments of Perfection</h2>
+            <div class="apple-gallery-grid">
+                <div class="gallery-card"><div class="img-zoom-frame"><img src="images/suhana1.jpeg" alt="Moment 1" onerror="this.src='https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=600'"></div></div>
+                <div class="gallery-card"><div class="img-zoom-frame"><img src="images/suhana2.jpeg" alt="Moment 2" onerror="this.src='https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=600'"></div></div>
+                <div class="gallery-card"><div class="img-zoom-frame"><img src="images/suhana3.jpeg" alt="Moment 3" onerror="this.src='https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?q=80&w=600'"></div></div>
+                <div class="gallery-card"><div class="img-zoom-frame"><img src="images/suhana4.jpeg" alt="Moment 4" onerror="this.src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=600'"></div></div>
+                <div class="gallery-card"><div class="img-zoom-frame"><img src="images/suhana5.jpeg" alt="Moment 5" onerror="this.src='https://images.unsplash.com/photo-1523438885200-e635ba2c371e?q=80&w=600'"></div></div>
+                <div class="gallery-card"><div class="img-zoom-frame"><img src="images/suhana6.jpeg" alt="Moment 6" onerror="this.src='https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=600'"></div></div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: THE IMMERSIVE LOVE LETTER -->
+        <section class="story-block page-padding">
+            <div class="glass-card letter-box">
+                <div id="typewriterTarget" class="typewriter-container"></div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: LUXURY GIFT HUB -->
+        <section class="story-block page-padding">
+            <h2 class="section-title">Tokens of My Adoration</h2>
+            <div class="gift-vault-grid">
+                <div class="gift-glass-card" data-gift="ring">
+                    <div class="gift-icon-wrapper">💍</div>
+                    <h3>The Promise Ring</h3>
+                    <span class="tap-hint">Unwrap Value</span>
+                </div>
+                <div class="gift-glass-card" data-gift="bracelet">
+                    <div class="gift-icon-wrapper">📿</div>
+                    <h3>The Infinity Bracelet</h3>
+                    <span class="tap-hint">Unwrap Value</span>
+                </div>
+                <div class="gift-glass-card" data-gift="perfume">
+                    <div class="gift-icon-wrapper">🌸</div>
+                    <h3>Enchanted Oud Perfume</h3>
+                    <span class="tap-hint">Unwrap Value</span>
+                </div>
+                <div class="gift-glass-card" data-gift="diary">
+                    <div class="gift-icon-wrapper">📖</div>
+                    <h3>Our Written Diary</h3>
+                    <span class="tap-hint">Unwrap Value</span>
+                </div>
+                <div class="gift-glass-card" data-gift="teddy">
+                    <div class="gift-icon-wrapper">🎀</div>
+                    <h3>The Royal Teddy</h3>
+                    <span class="tap-hint">Unwrap Value</span>
+                </div>
+                <div class="gift-glass-card" data-gift="chocolate">
+                    <div class="gift-icon-wrapper">🍫</div>
+                    <h3>Luxury Truffles</h3>
+                    <span class="tap-hint">Unwrap Value</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: INTERACTIVE MEME CAT CAKE-GUARD CAFE -->
+        <section class="story-block page-padding cat-defense-arena">
+            <div class="glass-card relative-container overflow-visible cat-stage">
+                <div id="angryCatEntity" class="meme-cat-actor hidden-actor">
+                    <!-- High quality realistic looking angry cat image -->
+                    <img src="https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?q=80&w=400" alt="Guardian Cat" class="cat-image-render">
+                    <div class="cat-weapon">🔪</div>
+                </div>
+                <div class="speech-bubble-glass" id="catSpeechBubble">
+                    <p>...</p>
+                </div>
+                <div class="cat-action-row" id="catActionRow">
+                    <button class="luxury-action-btn variant-sm" id="catApologyBtn"><span>I'm Sorry 😂</span></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: MASTER CINEMATIC COUNTDOWN RUNTIME -->
+        <section class="story-block text-center" id="triggerCountdownSection">
+            <button class="luxury-action-btn massive-btn" id="startGrandCountdownBtn">
+                <span>✨ Step Into the Next Chapter ✨</span>
+                <div class="btn-glow"></div>
+            </button>
+        </section>
+    </main>
+
+    <!-- FULLSCREEN MODAL INTERLUDES (COUNTDOWN, CELEBRATION CAKE, SPLAT & FINALITY) -->
+    <div id="countdownOverlay" class="fullscreen-panel modal-hidden dark-backdrop">
+        <div class="countdown-digits" id="countdownCounter">10</div>
+        <div class="heartbeat-declaration text-center hidden" id="heartbeatMsg">
+            <h1 class="heartbeat-text">I LOVEEEEEE YOUUUUUUU THE MOSTTTTTTT ❤️</h1>
+        </div>
+    </div>
+
+    <!-- BAKERY ROOM (3D CANVAS SIMULATION CAKE STAGE) -->
+    <div id="cakeBakingRoom" class="fullscreen-panel modal-hidden dream-blur-backdrop">
+        <div class="cake-assembly-pod">
+            <div class="cake-monolith">
+                <div class="cake-tier tier-base">
+                    <div class="gold-piping"></div>
+                    <div class="lily-accent">🌸</div>
+                </div>
+                <div class="cake-tier tier-top">
+                    <div class="gold-piping"></div>
+                    <div class="rose-accent">🌹</div>
+                </div>
+                <div class="candle-stand">
+                    <div class="candle-stick">
+                        <div class="candle-wick">
+                            <div class="candle-flame ignited" id="mainFlame"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="luxury-action-btn" id="blowCandleBtn"><span>🕯 Blow the Candles</span></button>
+        </div>
+    </div>
+
+    <!-- CAKE SLAM FINALE SURPRISE LAYER -->
+    <div id="finaleSplatRoom" class="fullscreen-panel modal-hidden pure-black-backdrop">
+        <div id="prideCatActor" class="running-cat">
+            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=400" alt="Meme Cat" class="cat-image-render rounded-full">
+            <div class="held-cake">🎂</div>
+        </div>
+        <div class="splat-impact-screen" id="splatImpactScreen">
+            <div class="splat-frosting">🧁</div>
+            <div class="splat-frosting splat-2"></div>
+            <div class="splat-frosting splat-3"></div>
+            <div class="taunting-cat-bubble">
+                <h2>😹 HAHAHAHAHA 😹</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- ENDLESS PARADISE FINAL MESSAGING -->
+    <div id="eternalScrollRoom" class="fullscreen-panel modal-hidden romantic-overload-backdrop">
+        <div class="scrollable-container-glass page-padding">
+            <div class="glass-card premium-entrance max-w-xl text-center final-love-card">
+                <h1 class="fairytale-title text-grow">Happy Birthday, My Love! 🎂🤍✨</h1>
+                <hr class="luxury-divider">
+                <div class="bengali-letter-body">
+                    <p>20th July… আজকের দিনটা আমার কাছে শুধু একটা তারিখ না, আজকের দিনটা সেই মানুষটার, যে আমার হাসির কারণ, শান্তির ঠিকানা আর প্রতিদিন ভালো থাকার একটা বড় কারণ। 🥹❤️</p>
+                    <p>তুমি সবসময় এমনই হাসিখুশি থেকো, তোমার সব স্বপ্ন এক এক করে পূরণ হোক, আর আল্লাহ তোমাকে সব খারাপ নজর আর কষ্ট থেকে সবসময় রক্ষা করুন। 🤲🌸</p>
+                    <p>তোমার জীবনে যতটা সুখ পাওয়ার যোগ্য, তার থেকেও হাজার গুণ বেশি সুখ যেন তুমি পাও। আমি শুধু চাই, তোমার মুখের এই সুন্দর হাসিটা যেন কোনোদিন হারিয়ে না যায়। 😊💖</p>
+                    <p>ধন্যবাদ আমার জীবনে আসার জন্য, আমাকে এতটা ভালোবাসার জন্য, আর আমার প্রতিটা দিনকে সুন্দর করে দেওয়ার জন্য। তুমি সত্যিই আমার সবচেয়ে সুন্দর পাওয়া। 🌍❤️</p>
+                </div>
+                <hr class="luxury-divider">
+                <div class="english-footer-declaration">
+                    <h3>Once Again...</h3>
+                    <h2 class="highlight-gold animate-pulse">🎉 Happy Birthday, My Pretty Girl! 🥹💐</h2>
+                    <p class="eternal-signature">I Love You So Much...<br><span class="timed-word">Today.</span><br><span class="timed-word">Tomorrow.</span><br><span class="timed-word">Forever.</span><br><span class="infinity-symbol">❤️♾️</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GENERAL GLOBAL MODAL POPUP FOR WRAPPED GIFTS -->
+    <div id="giftModal" class="global-popup-modal hidden-popup">
+        <div class="glass-card popup-content">
+            <button class="close-popup-btn" id="closePopupBtn">&times;</button>
+            <div id="popupIcon" class="popup-hero-icon">🎁</div>
+            <h3 id="popupTitle" class="popup-hero-title">Gift Unlocked</h3>
+            <p id="popupMessage" class="popup-hero-body">Romantic description placeholder.</p>
+        </div>
+    </div>
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+    <script src="script.js"></script>
+</body>
+</html>
